@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const Todos = require("../Models/Todos");
 const router = express.Router();
 
-router.get("/say", (req, res, next) => {
+router.get("/", (req, res, next) => {
   res.status(200).json({
     message: "Server: i am running!"
   })
